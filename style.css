@@ -1,0 +1,96 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-link i {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.active-nav-link {
+    background-color: #eef2ff;
+    color: #3b82f6;
+}
+
+.dark .active-nav-link {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+}
+
+.modal-container {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+.modal-panel {
+    position: relative;
+    width: 100%;
+    max-width: 28rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.dark .modal-panel {
+    background-color: #111827;
+}
+
+.status-badge-Pending {
+    background-color: #fef9c3;
+    color: #a16207;
+    border: 1px solid #fde047;
+}
+
+.dark .status-badge-Pending {
+    background-color: rgba(234, 179, 8, 0.1);
+    color: #fde047;
+    border-color: rgba(234, 179, 8, 0.3);
+}
+
+.status-badge-In-Progress {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.dark .status-badge-In-Progress {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #93c5fd;
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.status-badge-Completed {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+}
+
+.dark .status-badge-Completed {
+    background-color: rgba(74, 222, 128, 0.1);
+    color: #86efac;
+    border-color: rgba(74, 222, 128, 0.3);
+}
